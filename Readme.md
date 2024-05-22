@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Обухова Наталья](https://up.htmlacademy.ru/htmlcss-individual/2/user/2519265).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
