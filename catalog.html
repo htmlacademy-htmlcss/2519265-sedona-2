@@ -7,7 +7,7 @@
   <title>Каталог</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" data-test="header">
     <nav>
       <a class="logo" href="index.html">
         <img src="#" alt="Переход на главную страницу">
@@ -30,7 +30,7 @@
       <a class="header-btn-brown" href="#">Хочу сюда!</a>
     </div>
   </header>
-  <main>
+  <main data-test="main">
     <section class="filter">
       <h1 class="inner-filter-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -43,8 +43,8 @@
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
-      <div class="filter-form">
-        <h1 class="visually-hidden">Фильтры для выбора гостиницы</h1>
+      <div class="filter-form" data-test="filter">
+        <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="catalog-filter-group square-check">
             <legend>Инфраструктура:</legend>
@@ -98,7 +98,7 @@
         </form>
       </div>
     </section>
-    <section class="catalog-products">
+    <section class="catalog-products" data-test="catalog">
       <h2 class="visually-hidden">Список вариантов</h2>
       <p class="catalog-text">Найдено гостиниц:</p>
       <select class="select-control" aria-label="Сортировка">
@@ -174,7 +174,7 @@
         </li>
       </ul>
     </section>
-    <section class="subscribe">
+    <section class="subscribe" data-test="subscribe">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
@@ -183,7 +183,7 @@
       </form>
     </section>
   </main>
-  <footer class="footer main-footer">
+  <footer class="footer" data-test="footer">
     <ul class="social-links">
       <li class="social-item">
         <a class="social-link" href=" https://vk.com/htmlacademy">
