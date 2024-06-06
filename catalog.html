@@ -17,34 +17,38 @@
           <a class="nav-item-link" href="index.html">Главная</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-item-link">О седоне</a>
+          <a class="nav-item-link" href="#">О седоне</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item-link">Гостиницы</a>
+          <a class="nav-item-link" href="#">Гостиницы</a>
         </li>
       </ul>
     </nav>
-    <div class="header-btn">
-      <a class="header-btn-pic" href="#" aria-label="Открыть поле поиска"></a>
-      <a class="header-btn-pic" href="#" aria-label="Избранное"></a>
-      <a class="header-btn-brown" href="#">Хочу сюда!</a>
-    </div>
+    <ul class="header-links">
+      <li>
+        <a class="header-link btn-pic" href="#" aria-label="Открыть поле поиска"></a>
+      </li>
+      <li>
+        <a class="header-link btn-pic" href="#" aria-label="Избранное"><span>12</span></a>
+      </li>
+    </ul>
+    <a class="header-link btn-brown" href="#">Хочу сюда!</a>
   </header>
   <main data-test="main">
     <section class="filter">
       <h1 class="inner-filter-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+      <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a href="index.html" class="breadcrumbs-link">
             <span class="visually-hidden">Главная страница</span>
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
+          <a class="breadcrumbs-link" href="#">Гостиницы</a>
         </li>
       </ul>
       <div class="filter-form" data-test="filter">
-        <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2>
+        <!-- <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2> -->
         <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="catalog-filter-group square-check">
             <legend>Инфраструктура:</legend>
@@ -79,11 +83,11 @@
           <fieldset class="limits">
             <legend>Стоимость, ₽:</legend>
             <label>
-              <input type="number" name="min-cost" value="0">
+              <input type="text" name="min-cost" value="0">
               <span class="input-text">от</span>
             </label>
             <label>
-              <input type="number" name="max-cost" value="9000">
+              <input type="text" name="max-cost" value="9000">
               <span class="input-text">до</span>
             </label>
             <div class="slider-price">
@@ -113,8 +117,8 @@
       </div>
       <ul class="product-cards">
         <li class="card">
-          <img src="#" alt="Описание картинки">
-          <h3 class="card-title">Amara Resort & Spa</h3>
+          <a href="#"><img src="#" alt="Описание картинки"></a>
+          <a href="#"><h3 class="card-title">Amara Resort & Spa</h3></a>
           <span class="card-text">Гостиница</span>
           <span class="card-text">От 4000 ₽</span>
           <a href="#" class="card-link-all btn-brown">подробнее</a>
@@ -123,8 +127,8 @@
           <span class="card-rating">Рейтинг: 8,5</span>
         </li>
         <li class="card">
-          <img src="#" alt="Описание картинки">
-          <h3 class="card-title">Villas at Poco Diablo</h3>
+          <a href="#"><img src="#" alt="Описание картинки"></a>
+          <a href="#"><h3 class="card-title">Villas at Poco Diablo</h3></a>
           <span class="card-text">Гостиница</span>
           <span class="card-text">От 5000 ₽</span>
           <a href="#" class="card-link-all btn-brown">подробнее</a>
@@ -133,8 +137,8 @@
           <span class="card-rating">Рейтинг: 9,2</span>
         </li>
         <li class="card">
-          <img src="#" alt="Описание картинки">
-          <h3 class="card-title">Desert Quail Inn</h3>
+          <a href="#"><img src="#" alt="Описание картинки"></a>
+          <a href="#"><h3 class="card-title">Desert Quail Inn</h3></a>
           <span class="card-text">Гостиница</span>
           <span class="card-text">От 2500 ₽</span>
           <a href="#" class="card-link-all btn-brown">подробнее</a>
@@ -143,8 +147,8 @@
           <span class="card-rating">Рейтинг: 6,9</span>
         </li>
         <li class="card">
-          <img src="#" alt="Описание картинки">
-          <h3 class="card-title">GreenTree Inn</h3>
+          <a href="#"><img src="#" alt="Описание картинки"></a>
+          <a href="#"><h3 class="card-title">GreenTree Inn</h3></a>
           <span class="card-text">Гостиница</span>
           <span class="card-text">От 1500 ₽</span>
           <a href="#" class="card-link-all btn-brown">подробнее</a>
