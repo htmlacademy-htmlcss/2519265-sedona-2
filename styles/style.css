@@ -5,3 +5,355 @@
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Общие стили */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.page-container {
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-colored {
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+
+.button-light {
+
+}
+
+.btn-brown {
+  background-color: rgba(117, 97, 87, 1);
+  min-height: 36px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 800px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+}
+
+/* header */
+
+.header {
+  margin-bottom: 14px;
+}
+
+.nav-item-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.header-link.btn-brown {
+  width: 160px;
+  font-size: 16px;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+/* hero */
+
+.hero {
+  margin-bottom: 69px;
+  padding: 82px;
+  padding-top: 50px;
+  background-image: url("../images/decorative/hero_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* about */
+
+.about {
+  margin-bottom: 64px;
+}
+
+.about-title {
+  max-width: 625px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  margin-bottom: 70px;
+}
+
+.adventage-item {
+  padding: 102px 85px;
+  max-width: 400px;
+  text-align: center;
+  background-color:rgba(131, 179, 211, 0.2);
+}
+
+.adventage-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.adventage-item-img {
+  max-width: 100%;
+  display: flex;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.adventage-container {
+  padding: 102px 85px;
+  max-width: 400px;
+  background-color: #82B3D3;
+}
+
+.advantage-subtitle {
+  margin-bottom: 62px;
+}
+
+.advetage-text {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+/* invite */
+
+.invite {
+  margin-bottom: 96px;
+}
+
+.invite-title {
+  max-width: 510px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.invite-text {
+  margin-bottom: 64px;
+}
+
+.advices-item {
+  max-width: 400px;
+  padding: 183px 85px 81px 85px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.advices-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advices-item-house {
+  background-image: url("../images/decorative/home_middle.svg");
+  background-repeat: no-repeat;
+  background-position: center 100px;
+}
+
+.advices-item-food {
+  background-image: url("../images/decorative/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center 100px;
+}
+
+.advices-item-gift {
+  background-image: url("../images/decorative/gift.svg");
+  background-repeat: no-repeat;
+  background-position: center 100px;
+}
+
+.advices-subtitle {
+  margin-bottom: 30px;
+}
+
+/* search */
+
+.search {
+  margin-bottom: 96px;
+}
+
+.search-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-text {
+  margin-bottom: 54px;
+}
+
+.search-btn {
+  max-width: 376px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+/* subscribe */
+
+.subscribe {
+  padding: 96px 256px 104px 256px;
+  background-image: url("../images/decorative/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 45px;
+}
+
+.subscribe-title {
+  margin-bottom: 20px;
+  max-width: 480;
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-text {
+  margin-bottom: 54px;
+  max-width: 480px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-form {
+  display: flex;
+  width: 100%;
+}
+
+.subscribe-input {
+  width: 100%;
+  height: 52px;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px 12px 20px;
+}
+
+.subscribe-btn {
+  padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  background-color: rgba(130, 179, 211, 1);
+}
+
+/* footer */
+
+.social-link {
+  display: block;
+  width: 48px;
+  height: 40px;
+}
+
+.social-link-vk {
+  background-image: url("../images/decorative/vk.svg");
+  background-color: rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link-tg {
+  background-image: url("../images/decorative/telegram.svg");
+  background-color: rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link-youtube {
+  background-image: url("../images/decorative/youtube.svg");
+  background-color: rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link-tel {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.link-author {
+  display: block;
+  width: 115px;
+  height: 33px;
+  background-image: url("../images/decorative/logo-htmlacademy.svg");
+  background-color: rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
