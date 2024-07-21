@@ -12,37 +12,37 @@
   <div class="page-container">
     <header class="header">
       <nav class="nav-links">
-        <a class="logo" href="index.html">
+        <a class="logo-link" href="index.html">
           <img src="images/content/logo-sedona.svg" width="140" height="70" alt="Переход на главную страницу">
         </a>
-        <ul class="nav-links list-reset">
+        <ul class="nav-list list-reset">
           <li class="nav-item">
             <a class="nav-item-link" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-item-link" href="#">О седоне</a>
+            <a class="nav-item-link" href="#">О Cедоне</a>
           </li>
           <li class="nav-item">
-            <a class="nav-item-link" href="#">Гостиницы</a>
+            <a class="nav-item-link  nav-link-active" href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
       <ul class="header-links list-reset">
         <li>
-          <a class="header-link button-pic" href="#" aria-label="Открыть поле поиска"></a>
+          <a class="header-link button-pic-search" href="#" aria-label="Открыть поле поиска"></a>
         </li>
         <li>
-          <a class="header-link button-pic" href="#" aria-label="Избранное"><span>12</span></a>
+          <a class="header-link button-pic-favorite" href="#" aria-label="Избранное"></a>
         </li>
+        <a class="header-link button-brown button-colored" href="#">Хочу сюда!</a>
       </ul>
-      <a class="header-link button-brown button-colored" href="#">Хочу сюда!</a>
     </header>
     <main class="main-container">
       <section class="filter">
         <h1 class="inner-filter-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs list-reset">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
               <span class="visually-hidden">Главная страница</span>
             </a>
           </li>
@@ -69,7 +69,7 @@
               </label>
             </fieldset>
             <fieldset class="catalog-filter-group round-check">
-              <legend>Тип жилья:</legend>
+              <legend>Тип Жилья:</legend>
               <label  class="control-label">
                 <input class="control-input" type="radio" name="type" value="hotel" checked>
                 Гостиница
@@ -86,13 +86,13 @@
             <fieldset class="catalog-filter-group limits">
               <legend>Стоимость, ₽:</legend>
               <div class="limits-container">
-                <label>
+                <label class="limit-label-min">
                   <input class="limit limit-input-min" type="text" name="min-cost" value="0">
-                  <span class="input-text">от</span>
+                  <span class="input-text limit-input-text">от</span>
                 </label>
-                <label>
+                <label class="limit-label-max">
                   <input class="limit limit-input-max" type="text" name="max-cost" value="9000">
-                  <span class="input-text">до</span>
+                  <!-- <span class="input-text">до</span> -->
                 </label>
               </div>
               <div class="slider-price">
@@ -110,14 +110,14 @@
       <section class="catalog-products">
         <h2 class="visually-hidden">Список вариантов</h2>
         <div class="catalog-head">
-          <p class="catalog-text">Найдено гостиниц:38</p>
+          <p class="catalog-text">Найдено гостиниц: 38</p>
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
           </select>
           <div class="catalog-view">
-            <button class="button-light" type="button" aria-label="Показать карточки"></button>
+            <button class="button-light button-light-active" type="button" aria-label="Показать карточки"></button>
             <button class="button-light" type="button" aria-label="Показать по одному"></button>
             <button class="button-light" type="button" aria-label="Показать список"></button>
           </div>
@@ -136,7 +136,7 @@
               <a href="#" class="card-link-all button-brown button-colored">подробнее</a>
               <button class="button-add button-colored button-blue">в избранное</button>
               <div class="raiting four-stars"></div>
-              <span class="card-rating">Рейтинг: 9,2</span>
+              <span class="card-rating">Рейтинг: 8,5</span>
           </div>
           </li>
           <li class="card">
@@ -209,7 +209,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe subscribe-empty-bg">
         <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
         <p class="text subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
