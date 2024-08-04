@@ -96,15 +96,57 @@ img {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-color: transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+.button-light:hover {
+  border: 2px solid #000000;
+}
+
+.button-light:focus {
+  border: 2px solid #68A2CA;
+}
+
+.button-light:active {
+  border: 2px solid #000000;
 }
 
 .button-brown {
   background-color: #756157;
   min-height: 36px;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.button-brown:hover {
+  background-color: #615048;
+}
+
+.button-brown:focus {
+  background-color: #615048;
+}
+
+.button-brown:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 .button-blue {
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
   background-color: #82b3d3;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #68a2ca;
+}
+
+.button-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68a2ca;
+}
+
+.button-blue:disabled {
+  background-color: #E5E5E5;
 }
 
 .button-success {
@@ -376,6 +418,7 @@ img {
   line-height: 21px;
   text-align: center;
   background-color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 .advices-item:nth-child(odd) {
@@ -384,19 +427,16 @@ img {
 
 .advices-item-house {
   background-image: url("../images/decorative/home-middle.svg");
-  background-repeat: no-repeat;
   background-position: 164px 80px
 }
 
 .advices-item-food {
   background-image: url("../images/decorative/burger.svg");
-  background-repeat: no-repeat;
   background-position: 164px 81px
 }
 
 .advices-item-gift {
   background-image: url("../images/decorative/gift.svg");
-  background-repeat: no-repeat;
   background-position: 169px 78px
 }
 
@@ -485,7 +525,6 @@ img {
   font-size: 19px;
   border-radius: 0 4px 4px 0;
   border: none;
-  background-color: #82b3d3;
 }
 
 /* footer */
@@ -506,61 +545,55 @@ img {
   margin-right: auto;
 }
 
-.social-link-vk,
-.social-link-tg,
-.social-link-youtube {
+
+.social-link {
   display: block;
-  position: relative;
-  width: 40px;
+  width: 48px;
   height: 40px;
 }
 
-.social-link-vk::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 5px;
-  width: 40px;
-  height: 40px;
-  display: block;
-  background-image: url("../images/decorative/vk.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.social-link:focus {
+  outline: none;
 }
 
-.social-link-tg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 12px;
-  width: 40px;
-  height: 40px;
+.social-link svg {
   display: block;
-  background-image: url("../images/decorative/telegram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%;
+  margin: auto;
 }
 
-.social-link-youtube::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  display: block;
-  background-image: url("../images/decorative/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.social-link svg path {
+  transition: fill .3s ease-in-out;
+}
+
+.social-link:hover svg path {
+  fill: #68A2CA;
+}
+
+.social-link:focus svg path {
+  fill: #68A2CA;
+}
+
+.social-link:active svg path {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .link-tel {
-  margin-left: 26px;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
+  transition: color .3s ease-in-out;
+}
+
+.link-tel:hover,
+.link-tel:focus {
+  color: #756157;
+}
+
+.link-tel:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .link-author {
@@ -632,6 +665,19 @@ img {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
+  transition: color .3s ease-in-out;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-link-home {
@@ -836,7 +882,7 @@ img {
 .catalog-head {
   display: grid;
   grid-template-columns: 539px 291px 231px;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   justify-items: start;
   align-items: start;
 }
@@ -852,13 +898,18 @@ img {
 }
 
 .select-control {
+  position: relative;
   min-width: 292px;
-  padding: 10px 13px 10px 13px;
+  padding: 11px 43px 12px 16px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  appearance: none;
+  background-image: url("../images/decorative/select.svg");
+  background-repeat: no-repeat;
+  background-position: 256px 18px;
 }
 
 .select-control option {
@@ -916,8 +967,8 @@ img {
 }
 
 .product-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
   gap: 20px;
   padding-bottom: 40px;
   border-bottom: 1px solid #e6e6e6;
@@ -965,13 +1016,17 @@ img {
   margin-left: auto;
 }
 
+.card-align:nth-child(2n) {
+  justify-self: end;
+}
+
+
 .card-link-all {
   width: 140px;
   text-decoration: none;
 }
 
 .button-add {
-  margin-left: auto;
   min-width: 140px;
 }
 
@@ -989,17 +1044,16 @@ img {
 }
 
 .four-stars {
-  width: 80px;
+  width: 89px;
 }
 
 .three-stars {
-  width: 60px;
+  width: 66px;
 }
 
 .card-rating {
   width: 140px;
   padding: 8px 22px;
-  margin-left: auto;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1016,27 +1070,52 @@ img {
 }
 
 .pagination-item {
-  min-width: 60px;
-  height: 60px;
   display: flex;
+  flex-wrap: wrap;
+  min-width: 60px;
   justify-content: center;
   align-items: center;
 }
 
-.pagination-item.button-colored {
+.pagination-link.button-colored {
+  border: 1px solid #82b3d3;
+  background-color: #82b3d3;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.pagination-link.button-colored:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link.button-colored:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link.button-colored:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
 
-.pagination-item.pagination-current {
+.pagination-link.pagination-current,
+.pagination-link.pagination-current:hover,
+.pagination-link.pagination-current:focus,
+.pagination-link.pagination-current:active {
+  border: 1px solid transparent;
   background-color: #f2f2f2;
 }
 
 .pagination-link {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
 }
 
-.pagination-current .pagination-link {
+.pagination-current {
   color: #000000;
 }
 
