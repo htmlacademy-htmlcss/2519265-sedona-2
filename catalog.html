@@ -34,7 +34,9 @@
         <li>
           <a class="header-link button-pic-favorite" href="#" aria-label="Избранное"></a>
         </li>
-        <a class="header-link button-brown button-colored" href="#">Хочу сюда!</a>
+        <li>
+          <a class="header-link button-brown button-colored" href="#">Хочу сюда!</a>
+        </li>
       </ul>
     </header>
     <main class="main-container">
@@ -53,33 +55,39 @@
         <div class="form-container">
           <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="catalog-filter-group square-check">
+            <fieldset class="catalog-filter-group">
               <legend>Инфраструктура:</legend>
               <label  class="control-label">
                 <input class="control-input" type="checkbox" name="infrastructure" value="pool" checked>
+                <span class="control-mark square-check"></span>
                 Бассейн
               </label>
               <label  class="control-label">
                 <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
+                <span class="control-mark square-check"></span>
                 Парковка
               </label>
               <label  class="control-label">
                 <input class="control-input" type="checkbox" name="infrastructure" value="wi-fi">
+                <span class="control-mark square-check"></span>
                 Wi-Fi
               </label>
             </fieldset>
-            <fieldset class="catalog-filter-group round-check">
+            <fieldset class="catalog-filter-group">
               <legend>Тип Жилья:</legend>
               <label  class="control-label">
                 <input class="control-input" type="radio" name="type" value="hotel" checked>
+                <span class="control-mark round-check"></span>
                 Гостиница
               </label>
               <label  class="control-label">
                 <input class="control-input" type="radio" name="type" value="motel">
+                <span class="control-mark round-check"></span>
                 Мотель
               </label>
               <label  class="control-label">
                 <input class="control-input" type="radio" name="type" value="apartment">
+                <span class="control-mark round-check"></span>
                 Апартаменты
               </label>
             </fieldset>
@@ -123,7 +131,7 @@
         </div>
         <ul class="product-cards list-reset">
           <li class="card">
-            <a href="#">
+            <a href="#" tabindex="-1">
               <img class="prodact-img" src="images/content/amara-resort.jpg" width="300" height="212" alt="Звездное небо в горной расщелине.">
             </a>
             <a class="card-title-link" href="#">
@@ -139,7 +147,7 @@
           </div>
           </li>
           <li class="card">
-            <a href="#">
+            <a href="#" tabindex="-1">
               <img class="prodact-img" src="images/content/villas-at-poco-diablo.jpg" width="300" height="212" alt="Радуга над горой.">
             </a>
             <a class="card-title-link" href="#">
@@ -155,7 +163,7 @@
             </div>
           </li>
           <li class="card">
-            <a href="#">
+            <a href="#" tabindex="-1">
               <img class="prodact-img" src="images/content/desert-quail-inn.jpg" width="300" height="212" alt="Вид на одну из гор каньона в ясный день.">
             </a>
             <a class="card-title-link" href="#">
@@ -171,7 +179,7 @@
             </div>
           </li>
           <li class="card">
-            <a href="#">
+            <a href="#" tabindex="-1">
               <img class="prodact-img" src="images/content/greentree-inn.jpg" width="300" height="212" alt="Одна из гор каньона ночью.">
             </a>
             <a class="card-title-link" href="#">
@@ -192,19 +200,19 @@
             <a class="pagination-link pagination-current button-colored" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link button-colored" href="#">2</a>
+            <a class="pagination-link button-colored button-blue" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link button-colored" href="#">3</a>
+            <a class="pagination-link button-colored button-blue" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link button-colored" href="#">4</a>
+            <a class="pagination-link button-colored button-blue" href="#">4</a>
           </li>
           <li class="pagination-item">
             <span>...</span>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link button-colored" href="#">10</a>
+            <a class="pagination-link button-colored button-blue" href="#">10</a>
           </li>
         </ul>
       </section>
