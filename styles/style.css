@@ -114,7 +114,7 @@ img {
 .button-brown {
   background-color: #756157;
   min-height: 36px;
-  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .button-brown:hover {
@@ -137,7 +137,7 @@ img {
 
 
 .button-blue {
-  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color 0.3s ease-in-out;
   background-color: #82b3d3;
 }
 
@@ -242,7 +242,7 @@ img {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-link-active {
@@ -560,7 +560,7 @@ img {
 
 .subscribe-title {
   margin: 0 auto 20px auto;
-  max-width: 480;
+  max-width: 480px;
 }
 
 .subscribe-text {
@@ -583,7 +583,8 @@ img {
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px 12px 20px;
-  transition: border .3s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .subscribe-input:hover {
@@ -654,7 +655,7 @@ img {
 }
 
 .social-link {
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .social-link:hover {
@@ -675,7 +676,7 @@ img {
   line-height: 40px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .link-tel:hover,
@@ -704,7 +705,7 @@ img {
   mask-repeat: no-repeat;
   mask-size: 115px 34px;
   mask-position: 1px 0;
-  transition: background-color .3s ease-in-out, opacity .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .link-author:hover,
@@ -772,7 +773,7 @@ img {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .breadcrumbs-link:hover {
@@ -840,6 +841,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+  cursor: pointer;
 }
 
 .control-label:not(:last-child) {
@@ -964,14 +966,16 @@ img {
   position: relative;
   border-radius: 4px 0 0 4px;
   border: 3px solid transparent;
-  transition: border .3s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .limit-input-max {
   position: relative;
   border-radius: 0 4px 4px 0;
   border: 3px solid transparent;
-  transition: border .3s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .limit-input-min:hover,
@@ -1020,7 +1024,7 @@ img {
   border: 2px solid #ffffff;
   border-radius: 5px;
   background-color: #ffffff;
-  transition: border .3s ease-in-out, box-shadow .3s ease-in-out, color .3s ease-in-out;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -1052,7 +1056,7 @@ img {
   min-width: 191px;
   padding: 8px 8px;
   text-align: center;
-  transition: border .3s ease-in-out;
+  transition: border 0.3s ease-in-out;
 }
 
 .catalog-app-button {
@@ -1107,6 +1111,7 @@ img {
   background-image: url("../images/decorative/select.svg");
   background-repeat: no-repeat;
   background-position: 256px 18px;
+  cursor: pointer;
 }
 
 .catalog-head .select-control:hover,
@@ -1181,6 +1186,10 @@ img {
 }
 
 .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 15px;
   max-width: 340px;
   padding: 18px;
   border-radius: 4px;
@@ -1194,14 +1203,19 @@ img {
 }
 
 .prodact-img {
+  grid-column: span 2;
+}
+
+.prodact-img img {
   vertical-align: middle;
-  margin-bottom: 18px;
+  margin-bottom: 3px;
 }
 
 .card-title-link {
+  grid-column: span 2;
   text-decoration: none;
   color: #000000;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .card-title-link:hover,
@@ -1218,35 +1232,24 @@ img {
 }
 
 .card-title {
-  margin: 0 0 16px 0;
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   color: inherit;
 }
 
-.card-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-}
-
 .card-text {
-  display: block;
-  margin-bottom: 15px;
+  grid-column: 1 / 2;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
 }
 
-.card-text:nth-child(2) {
-  margin-left: auto;
-}
-
 .card-align:nth-child(2n) {
+  grid-column: 2 / 3;
   justify-self: end;
 }
-
 
 .card-link-all {
   width: 140px;
@@ -1265,6 +1268,7 @@ img {
 .raiting {
   width: 40px;
   height: 30px;
+  margin-top: 4px;
   background-image: url("../images/decorative/star.svg");
   background-repeat: space;
   background-position: 8px 8px;
@@ -1280,10 +1284,12 @@ img {
 
 .card-rating {
   width: 140px;
-  padding: 8px 22px;
+  margin-top: 4px;
+  padding: 8px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
@@ -1307,7 +1313,7 @@ img {
 .pagination-link {
   border: 1px solid #82b3d3;
   background-color: #82b3d3;
-  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .pagination-current,
@@ -1370,7 +1376,7 @@ img {
   width: 717px;
   padding: 64px 70px;
   background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.149);
   border-radius: 30px;
 }
 
@@ -1393,7 +1399,7 @@ img {
   border-radius: 100%;
   outline: none;
   border: 2px solid transparent;
-  transition: border .3s ease-in-out, opacity .3s ease-in-out;
+  transition: border 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .btn-close:hover {
@@ -1431,6 +1437,13 @@ img {
   transform: rotate(-45deg);
 }
 
+.modul-form {
+  display: grid;
+  grid-template-columns: 122px 1fr 122px 1fr;
+  column-gap: 15px;
+  row-gap: 4px;
+}
+
 .quantity {
   margin: 0;
   display: flex;
@@ -1439,10 +1452,8 @@ img {
 
 .modul-label {
   position: relative;
-  display: grid;
-  grid-template-columns: 137px 3fr;
-  align-items: start;
-  margin-bottom: 48px;
+  grid-row: span 2;
+  margin-top: 12px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1451,6 +1462,7 @@ img {
 
 .input-check-in,
 .input-check-out {
+  grid-column: span 3;
   background-image: url("../images/decorative/calendar.svg");
   background-repeat: no-repeat;
   background-position: 95% 52%;
@@ -1480,8 +1492,23 @@ img {
 }
 
 .kids {
-  grid-template-columns: 1fr 38px 2fr;
   justify-items: end;
+  grid-column-start: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  justify-self: center;
+  margin-top: 10px;
+  margin-left: 17px;
+}
+
+.range-input {
+  position: relative;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.range-input-kids {
+  justify-self: end;
 }
 
 .quantity-adult,
@@ -1539,9 +1566,8 @@ img {
 }
 
 .information-text {
-  position: absolute;
-  left: 156px;
-  top: 52px;
+  grid-column: span 3;
+  margin-bottom: 19px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -1555,6 +1581,8 @@ img {
 
 .modul-button {
   width: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
   padding-top: 18px;
   padding-bottom: 18px;
   border-radius: 10px;
@@ -1568,6 +1596,13 @@ img {
   width: 26px;
   height: 26px;
   position: relative;
+  grid-column-start: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  /* align-self: center; */
+  justify-self: end;
+  margin-top: 10px;
+  margin-right: -2px;
 }
 
 

@@ -134,34 +134,28 @@
           <h2 class="modul-title title">Поиск гостиницы в&nbsp;Седоне</h2>
           <button class="btn-close" type="button"></button>
         </div>
-        <form class="modul-form" action="" method="get">
-          <label class="modul-label date-check-in">
-            Дата заезда:
-            <input class="modul-input input-check-in" type="text" placeholder="27 апреля 2020">
-            <span class="error information-text">Мы не можем отправить вас в прошлое.</span>
-          </label>
-          <label class="modul-label date-check-out">
-            Дата выезда:
-            <input class="modul-input input-check-out" type="text" placeholder="1 сентября 2021">
-            <span class="information-text">На эти даты есть свободные номера. Пока есть.</span>
-          </label>
-          <p class="quantity">
-            <label class="modul-label adult">
-              Взрослые:
-              <button class="reduction-adult"></button>
-              <input class="modul-input quantity-adult" type="number" value="2">
-              <button class="addendum-adult"></button>
-            </label>
-            <label class="modul-label kids">
-              Дети:
-              <span class="tooltip"aria-labelledby="tooltip-label-date">
-                <button class="button-colored button-blue tooltip-toggle" type="button"></button>
-                <span class="tooltip-text" role="tooltip"id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </span>
-              <button class="reduction-kids"></button>
-              <input class="modul-input quantity-kids"  type="number" value="2">
-              <button class="addendum-kids"></button>
-            </label>
+        <form class="modul-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="modul-label date-check-in" for="check-in">Дата заезда:</label>
+          <input class="modul-input input-check-in" id="check-in" name="date-check-in" type="text" value="27 апреля 2020" required>
+          <span class="error information-text">Мы не можем отправить вас в прошлое.</span>
+          <label class="modul-label date-check-out" for="check-out">Дата выезда:</label>
+          <input class="modul-input input-check-out" id="check-out" name="date-check-out" type="text" value="1 сентября 2021">
+          <span class="information-text">На эти даты есть свободные номера. Пока есть.</span>
+          <label class="modul-label adult" for="adult">Взрослые:</label>
+          <p class="range-input range-input-adult">
+            <button class="reduction-adult" type="button"></button>
+            <input class="modul-input quantity-adult" id="adult" name="adult" type="number" value="2">
+            <button class="addendum-adult" type="button"></button>
+          </p>
+          <label class="modul-label kids" for="kids">Дети:</label>
+          <span class="tooltip" aria-labelledby="tooltip-label-date">
+            <button class="button-colored button-blue tooltip-toggle" type="button"></button>
+            <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </span>
+          <p class="range-input range-input-kids">
+            <button class="reduction-kids" type="button"></button>
+            <input class="modul-input quantity-kids" id="kids" name="kids" type="number" value="2">
+            <button class="addendum-kids" type="button"></button>
           </p>
           <button class="button-colored button-blue modul-button" type="submit">Начать</button>
         </form>
