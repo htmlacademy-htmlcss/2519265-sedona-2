@@ -2,7 +2,7 @@ let moduleBtn = document.querySelector(".search-button");
 let module = document.querySelector(".module-container");
 let moduleBtnClose = document.querySelector(".btn-close");
 let body = document.querySelector(".body");
-let lastFocus
+let lastFocus;
 
 function modalShow () {
   lastFocus = document.activeElement;
@@ -10,7 +10,8 @@ function modalShow () {
   module.focus();
 }
 
-moduleBtn.addEventListener('click', function() {
+moduleBtn.addEventListener('click', function(e) {
+  e.preventDefault();
   module.classList.add("module-container-active");
   body.classList.add("no-scroll");
   modalShow ();
@@ -29,7 +30,7 @@ module.addEventListener('click', (e) => {
     body.classList.remove("no-scroll");
     lastFocus.focus();
   }
-),1000}
+),500}
 });
 
 // tooltip
@@ -39,7 +40,11 @@ let tooltipBtn = document.querySelector(".tooltip-toggle");
 
 tooltipBtn.onfocus = function() {
   if(tooltip) {
-      document.querySelector(".tooltip-text").style.display = "block";
+    document.querySelector(".tooltip-text").style.display = "block";
+
+    tooltipBtn.onblur = function() {
+      document.querySelector(".tooltip-text").style.display = "none";
+    }
   }else {
     setTimeout(() => {
       document.querySelector(".tooltip-text").style.display = "block";
@@ -54,6 +59,10 @@ tooltipBtn.onblur = function() {
 tooltipBtn.addEventListener('mouseover', function() {
   if(tooltip) {
       document.querySelector(".tooltip-text").style.display = "block";
+
+      tooltipBtn.onblur = function() {
+        document.querySelector(".tooltip-text").style.display = "none";
+      }
   }else {
     setTimeout(() => {
       document.querySelector(".tooltip-text").style.display = "block";
@@ -81,8 +90,3 @@ tooltipBtn.addEventListener('mouseout', function() {
     }
   }, 500)
 });
-
-
-
-
-
