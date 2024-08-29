@@ -359,7 +359,7 @@ img {
   background-image: url("../images/decorative/hero-background-bottom.svg"), url("../images/decorative/hero-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
-  background-size: contain, cover;
+  background-size: contain 57px, cover;
 }
 
 /* about */
@@ -1480,12 +1480,6 @@ img {
   column-gap: 15px;
   row-gap: 4px;
 }
-/*
-.quantity {
-  margin: 0;
-  display: flex;
-  gap: 29px;
-} */
 
 .modal-label {
   position: relative;
@@ -1531,8 +1525,6 @@ img {
 .modal-input:not(:placeholder-shown) {
   opacity: 1;
 }
-
-.modal-input
 
 .adult,
 .kids {

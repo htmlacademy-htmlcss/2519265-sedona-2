@@ -1,32 +1,32 @@
-let moduleBtn = document.querySelector(".search-button");
-let module = document.querySelector(".module-container");
-let moduleBtnClose = document.querySelector(".btn-close");
+let modalBtn = document.querySelector(".search-button");
+let modal = document.querySelector(".modal-container");
+let modalBtnClose = document.querySelector(".btn-close");
 let body = document.querySelector(".body");
 let lastFocus;
 
 function modalShow () {
   lastFocus = document.activeElement;
-  module.setAttribute('tabindex', '0');
-  module.focus();
+  modal.setAttribute('tabindex', '0');
+  modal.focus();
 }
 
-moduleBtn.addEventListener('click', function(e) {
+modalBtn.addEventListener('click', function(e) {
   e.preventDefault();
-  module.classList.add("module-container-active");
+  modal.classList.add("modal-container-active");
   body.classList.add("no-scroll");
   modalShow ();
 })
 
-moduleBtnClose.addEventListener('click', function() {
-  module.classList.remove("module-container-active");
+modalBtnClose.addEventListener('click', function() {
+  modal.classList.remove("modal-container-active");
   body.classList.remove("no-scroll");
   lastFocus.focus();
 })
 
-module.addEventListener('click', (e) => {
-  if (e.target === module) {
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
     setTimeout(() => {
-    module.classList.remove("module-container-active");
+    modal.classList.remove("modal-container-active");
     body.classList.remove("no-scroll");
     lastFocus.focus();
   }

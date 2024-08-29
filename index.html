@@ -10,7 +10,7 @@
 </head>
 <body class="body">
   <div class="page-container">
-    <header class="header">
+    <header class="header" data-test="header">
       <nav class="nav-links">
         <a class="logo-link" href="#">
           <img src="images/content/logo-sedona.svg" width="140" height="70" alt="Главная страница">
@@ -42,12 +42,12 @@
       </ul>
       <a class="header-btn button-brown button-colored" href="#">Хочу сюда!</a>
     </header>
-    <main class="main-container">
-      <section class="hero">
+    <main class="main-container" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Туристический тур в Седону</h1>
         <img src="images/content/welcome-to-sedona.svg" width="458" height="352" alt="Welcome to the gorgeous - Sedona. Because the Grand Canyon sucks!">
       </section>
-      <section class="about">
+      <section class="about" data-test="advantages">
         <h2 class="title about-title">Седона — небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий большего!</h2>
         <p class="text about-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages list-reset">
@@ -79,7 +79,7 @@
           </li>
         </ul>
       </section>
-      <section class="invite">
+      <section class="invite" data-test="service">
         <h2 class="title invite-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="text invite-text">Опытный персонал и качественное обслуживание!</p>
         <div class="advices">
@@ -100,12 +100,12 @@
           </ul>
         </div>
       </section>
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="title search-title">Заинтересовались?</h2>
         <p class="text search-text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-button button-brown button-colored" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe subscribe-bg">
+      <section class="subscribe subscribe-bg" data-test="subscribe">
         <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
         <p class="text subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -114,7 +114,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="social-links list-reset">
         <li class="social-item">
           <a class="social-link social-link-vk" href=" https://vk.com/htmlacademy" aria-label="Переход на страницу вконтакте">
@@ -142,40 +142,40 @@
       </div>
     </footer>
 
-    <div class="module-container">
-      <div class="module-card">
-        <div class="module-head">
-          <h2 class="module-title title">Поиск гостиницы в&nbsp;Седоне</h2>
+    <div class="modal-container" data-test="modal">
+      <div class="modal-card">
+        <div class="modal-head">
+          <h2 class="modal-title title">Поиск гостиницы в&nbsp;Седоне</h2>
           <button class="btn-close" type="button"></button>
         </div>
-        <form class="module-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="module-label date-check-in" for="check-in">Дата заезда:</label>
-          <input class="module-input input-check-in" id="check-in" name="date-check-in" type="text" value="27 апреля 2020" required placeholder="Введите дату заезда">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal-label date-check-in" for="check-in">Дата заезда:</label>
+          <input class="modal-input input-check-in" id="check-in" name="date-check-in" type="text" value="27 апреля 2020" required placeholder="Введите дату заезда">
           <span class="error information-text">Мы не можем отправить вас в прошлое.</span>
-          <label class="module-label date-check-out" for="check-out">Дата выезда:</label>
-          <input class="module-input input-check-out" id="check-out" name="date-check-out" type="text" value="1 сентября 2021" required placeholder="Введите дату отезда">
+          <label class="modal-label date-check-out" for="check-out">Дата выезда:</label>
+          <input class="modal-input input-check-out" id="check-out" name="date-check-out" type="text" value="1 сентября 2021" required placeholder="Введите дату отезда">
           <span class="information-text">На эти даты есть свободные номера. Пока есть.</span>
-          <label class="module-label adult" for="adult">Взрослые:</label>
+          <label class="modal-label adult" for="adult">Взрослые:</label>
           <p class="range-input range-input-adult">
             <button class="reduction-adult range-input-btn" type="button"></button>
-            <input class="module-input quantity-adult" id="adult" name="adult" type="number" value="2">
+            <input class="modal-input quantity-adult" id="adult" name="adult" type="number" value="2">
             <button class="addendum-adult range-input-btn" type="button"></button>
           </p>
-          <label class="module-label kids" for="kids">Дети:</label>
+          <label class="modal-label kids" for="kids">Дети:</label>
           <span class="tooltip" aria-labelledby="tooltip-label-date">
             <button class="button-colored button-blue tooltip-toggle" type="button"></button>
             <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
           </span>
           <p class="range-input range-input-kids">
             <button class="reduction-kids range-input-btn" type="button"></button>
-            <input class="module-input quantity-kids" id="kids" name="kids" type="number" value="2">
+            <input class="modal-input quantity-kids" id="kids" name="kids" type="number" value="2">
             <button class="addendum-kids range-input-btn" type="button"></button>
           </p>
-          <button class="button-colored button-blue module-button" type="submit">Найти</button>
+          <button class="button-colored button-blue modal-button" type="submit">Найти</button>
         </form>
       </div>
     </div>
   </div>
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
