@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Обухова Наталья](https://up.htmlacademy.ru/htmlcss-individual/2/user/2519265).
-* Наставник: `Неизвестно`.
+* Студент: [Демидова Наталья](https://up.htmlacademy.ru/htmlcss-individual/2/user/2519265).
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+* Сайт [Мой проект "Седона"](https://natalyademidova.github.io/2519265-sedona-2/).
 
 ---
 
