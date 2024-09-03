@@ -71,6 +71,7 @@ img {
 
 .page-container {
   max-width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -345,6 +346,7 @@ img {
   width: 160px;
   margin-top: 15px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 /* hero */
